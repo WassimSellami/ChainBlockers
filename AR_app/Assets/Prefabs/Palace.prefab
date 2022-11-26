@@ -7470,14 +7470,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7951386719497711330}
     m_Modifications:
-    - target: {fileID: 512695481, guid: 5e4ff232c4aec654d8747e30eaf2c370, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 331146419585623060, guid: 5e4ff232c4aec654d8747e30eaf2c370,
         type: 3}
       propertyPath: m_Name
-      value: Ancient_Punic_Elephant_with_Howdah_v2 (2)
+      value: Ancient_Punic_Elephant_with_Howdah
       objectReference: {fileID: 0}
     - target: {fileID: 1140439052407504558, guid: 5e4ff232c4aec654d8747e30eaf2c370,
         type: 3}

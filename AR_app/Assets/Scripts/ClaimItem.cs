@@ -20,10 +20,12 @@ public class ClaimItem : MonoBehaviour
     private Text ownerText;
     private Player player;
     private KeyBehavior keyBehavior;
-
+    private SceneManager sceneManager;
+    
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        sceneManager = FindObjectOfType<SceneManager>();
     }
     public void ClaimClicked()
     {
@@ -42,7 +44,7 @@ public class ClaimItem : MonoBehaviour
             ownerText.text = player.NickName;
             GameObject.FindGameObjectWithTag("Icon").SetActive(false);
             //keyBehavior.gameObject.SetActive(false);
-
+            sceneManager.SetActiveObject();
             return;
         }
         denialPanelWithKey.SetActive(true);
