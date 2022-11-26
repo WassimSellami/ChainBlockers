@@ -17,7 +17,7 @@ public class FaceTheCamera : MonoBehaviour
         targetAngle = transform.localEulerAngles;
         targetAngle.x = 0;
         targetAngle.y = 0;
-        targetAngle.z += 90;
+        //targetAngle.z += 90;
         transform.localEulerAngles = targetAngle;
     }
 }
