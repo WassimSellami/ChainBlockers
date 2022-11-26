@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Gaze : MonoBehaviour
 {
-    private List<InfoBehavior> infos = new List<InfoBehavior>();
-    //private List<KeyBehavior> clickMePanels = new List<KeyBehavior>();
-   
+    private List<InfoBehavior> infos = new List<InfoBehavior>();   
 
     void Update()
     {
@@ -19,26 +17,16 @@ public class Gaze : MonoBehaviour
                 {
                     openInfo(hit.collider.gameObject.GetComponent<InfoBehavior>());
                 }
-                else if (hit.collider.tag == "Key")
-                {
-                    //openClickMePanel(hit.collider.gameObject.GetComponent<KeyBehavior>());
-                }
             }
             else
             {
                 closeAllInfos();
-                //closeAllClickMePanels();
             }
         }
-    }
-    private void openClickMePanel(KeyBehavior keyBehavior)
-    {
-        keyBehavior.OpenClickMePanel();
     }
     public void UpdateInfosAndPanelsList()
     {
         infos.AddRange(FindObjectsOfType<InfoBehavior>());
-        //clickMePanels.AddRange(FindObjectsOfType<KeyBehavior>());
     }
     private void openInfo(InfoBehavior desiredInfo)
     {
@@ -60,12 +48,5 @@ public class Gaze : MonoBehaviour
         {
             info.CloseInfo();
         }
-    }
-    private void closeAllClickMePanels()
-    {
-        //foreach (KeyBehavior panel in clickMePanels)
-        //{
-            //panel.CloseClickMePanel();
-       // }
     }
 }

@@ -41,7 +41,7 @@ public class ClaimItem : MonoBehaviour
             toClaimPanel.SetActive(false);
             ownerText.text = player.NickName;
             GameObject.FindGameObjectWithTag("Icon").SetActive(false);
-            keyBehavior.gameObject.SetActive(false);
+            //keyBehavior.gameObject.SetActive(false);
 
             return;
         }

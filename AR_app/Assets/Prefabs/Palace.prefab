@@ -1240,9 +1240,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1186290545567240943}
-  m_LocalRotation: {x: -0.0011724745, y: 0.7071058, z: 0.7071058, w: 0.0011724745}
-  m_LocalPosition: {x: 0, y: -0, z: 0.128}
-  m_LocalScale: {x: 0.472, y: 0.15, z: 1.5039998}
+  m_LocalRotation: {x: -0.0011724529, y: 0.7071058, z: 0.7071058, w: 0.0011724529}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08700001}
+  m_LocalScale: {x: 0.10000002, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5023499807019639629}
@@ -1326,10 +1326,11 @@ GameObject:
   - component: {fileID: 3172382750330077338}
   - component: {fileID: 856359047711994960}
   - component: {fileID: 6607112797417987442}
-  - component: {fileID: 8234548682021165753}
+  - component: {fileID: 205425258962155981}
+  - component: {fileID: 934542717306901603}
   m_Layer: 0
   m_Name: Worrior
-  m_TagString: Key
+  m_TagString: Claimable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1414,7 +1415,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08610363, y: 0.071787514, z: 0.09259805}
   m_Center: {x: 0.009120338, y: -0.013519008, z: -0.002574725}
---- !u!114 &8234548682021165753
+--- !u!114 &205425258962155981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1423,10 +1424,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1216704674258687365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5abf9cbf1292e74894d78015f5cbcba, type: 3}
+  m_Script: {fileID: 11500000, guid: a4a0b5e7cc2fd5e46b9e96d51611bb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: {fileID: 0}
+  sectionInfo: {fileID: 4885384467358782002}
+  descriptionPanel: {fileID: 3952362779152668330}
+--- !u!114 &934542717306901603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216704674258687365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069c5474b9d3cc444b59166074b2369c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceptancePanel: {fileID: 2836914518973451536}
+  denialPanelWithoutKey: {fileID: 2684228408026874621}
+  denialPanelWithKey: {fileID: 4428695256598124210}
+  descriptionPanel: {fileID: 3952362779152668330}
+  toBuyPanel: {fileID: 2989683425550839261}
+  toClaimPanel: {fileID: 2947142564289479841}
+  ownerText: {fileID: 3616215753321701796}
 --- !u!1 &1371500331366182980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,16 +2221,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640896444765025382}
-  m_LocalRotation: {x: -0.0011724745, y: 0.7071058, z: 0.7071058, w: 0.0011724745}
-  m_LocalPosition: {x: 0, y: 0, z: 0.27900112}
-  m_LocalScale: {x: 0.472, y: 0.33, z: 1.5039998}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.10900002}
+  m_LocalScale: {x: 0.079999976, y: 0.07999998, z: 0.07999998}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2596761950954244606}
   - {fileID: 7398684483672403999}
   m_Father: {fileID: 4885384467358782002}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: -0.19, z: 180}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
 --- !u!33 &7240101828338190893
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2553,7 +2574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4193297439558876805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3646,7 +3667,7 @@ GameObject:
   - component: {fileID: 307675056391382209}
   m_Layer: 0
   m_Name: PalaceSectionInfo
-  m_TagString: Untagged
+  m_TagString: Claimable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3659,8 +3680,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4778247942540765091}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.408, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0.46, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7259737282148591138}
@@ -5035,7 +5056,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1424532206253983357}
+      - m_Target: {fileID: 934542717306901603}
         m_TargetAssemblyTypeName: ClaimItem, Assembly-CSharp
         m_MethodName: ClaimClicked
         m_Mode: 1
@@ -5207,8 +5228,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6590804772497072597}
   m_LocalRotation: {x: -0, y: -0, z: 0.43616757, w: 0.89986545}
-  m_LocalPosition: {x: -0, y: 0, z: 0.0441}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8983799102248003768}
@@ -5814,7 +5835,7 @@ GameObject:
   - component: {fileID: 7864798096224100141}
   m_Layer: 0
   m_Name: Palace
-  m_TagString: Untagged
+  m_TagString: Claimable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5901,12 +5922,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db0a72208136344a9004b6fdab92542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScaleMinValue: 1
-  ScaleMaxValue: 10
+  ScaleMinValue: 3
+  ScaleMaxValue: 30
   RotateMinValue: 0
   RotateMaxValue: 360
-  HeightMinValue: -1
-  HeightMaxValue: 2
+  HeightMinValue: -3
+  HeightMaxValue: 3
 --- !u!65 &5090784201455480227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6833,7 +6854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8885689420823711043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7521,18 +7542,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 726149547397894583}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1424532206253983357 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1862020008153520074, guid: 5e4ff232c4aec654d8747e30eaf2c370,
-    type: 3}
-  m_PrefabInstance: {fileID: 726149547397894583}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069c5474b9d3cc444b59166074b2369c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4973923772542261701
 PrefabInstance:
   m_ObjectHideFlags: 0
